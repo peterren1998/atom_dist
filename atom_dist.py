@@ -36,15 +36,28 @@ for frame_temp in range(num_frames):
     atom_1_line = atoms[int(atom_num_1)]
     atom_2_line = atoms[int(atom_num_2)]
 
-    atom_1_attributes = atom_1_line.split()
-    atom_2_attributes = atom_2_line.split()
+    # atom_1_attributes = atom_1_line.split()
+    # atom_2_attributes = atom_2_line.split()
 
-    a1x = float(atom_1_attributes[6])
-    a1y = float(atom_1_attributes[7])
-    a1z = float(atom_1_attributes[8])
-    a2x = float(atom_2_attributes[6])
-    a2y = float(atom_2_attributes[7])
-    a2z = float(atom_2_attributes[8])
+    # a1x = float(atom_1_attributes[6])
+    # a1y = float(atom_1_attributes[7])
+    # a1z = float(atom_1_attributes[8])
+    # a2x = float(atom_2_attributes[6])
+    # a2y = float(atom_2_attributes[7])
+    # a2z = float(atom_2_attributes[8])
+
+    a1x = float(atom_1_line[26:38])
+    a1y = float(atom_1_line[38:46])
+    a1z = float(atom_1_line[46:54])
+    a2x = float(atom_2_line[26:38])
+    a2y = float(atom_2_line[38:46])
+    a2z = float(atom_2_line[46:54])
+    print("a1x: " + str(a1x))
+    print("a1y: " + str(a1y))
+    print("a1z: " + str(a1z))
+    print("a2x: " + str(a2x))
+    print("a2y: " + str(a2y))
+    print("a2z: " + str(a2z))
 
     r2 = (a1x - a2x)**2 + (a1y - a2y)**2 + (a1z - a2z)**2
     r = math.sqrt(r2)
