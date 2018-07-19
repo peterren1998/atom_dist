@@ -2,7 +2,7 @@ import math
 import subprocess
 import sys
 
-catdcd_path = "/Users/peterren/Desktop/Research/q99a/atom_dist/catdcd/MACOSXX86/bin/catdcd4.0/catdcd"
+catdcd_path = "/Users/peterren/Desktop/Research/catdcd/MACOSXX86/bin/catdcd4.0/catdcd"
 dcd_file = sys.argv[1]
 pdb_file = sys.argv[2]
 index_file = sys.argv[3]
